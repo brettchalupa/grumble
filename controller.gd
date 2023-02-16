@@ -15,5 +15,5 @@ func _process(delta):
 
 
 func _on_rumble_button_pressed():
-	Input.start_joy_vibration(jid, 0.5, 0.5, 1.0)
+	Input.start_joy_vibration(jid, 0.25, 0.25, 1.0)
 
