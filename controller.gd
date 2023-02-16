@@ -8,12 +8,5 @@ func _ready():
 	$Name.text = "NAME:\n" + Input.get_joy_name(jid)
 	$GUID.text = "UID:\n" + Input.get_joy_guid(jid)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
 func _on_rumble_button_pressed():
 	Input.start_joy_vibration(jid, 0.25, 0.25, 1.0)
-
