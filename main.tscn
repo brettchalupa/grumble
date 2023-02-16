@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq13ipqf7g00a"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_jqejk"]
+[ext_resource type="PackedScene" uid="uid://cqr23vmf0gjcb" path="res://controller.tscn" id="2_6lcky"]
+[ext_resource type="Texture2D" uid="uid://bhfnmcsqswch7" path="res://icon.svg" id="3_5m00m"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_jqejk")
+controller_scene = ExtResource("2_6lcky")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 101.0
+offset_top = 32.0
+offset_right = 349.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 32
+text = "RUMBLE TESTER"
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(56, 56)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("3_5m00m")
